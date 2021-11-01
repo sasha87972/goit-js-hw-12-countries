@@ -1,7 +1,16 @@
+body {
+  background-color: #4682b4;
+}
+
 .page__wrapper {
-  margin: 30px;
+  padding: 20px;
+  background-color: #4682b4;
+}
+.country__wrapper {
+  background-color: #4682b4;
 }
 .search__input {
+  margin: 0 auto;
   width: 300px;
   padding: 5px;
   margin-bottom: 10px;
