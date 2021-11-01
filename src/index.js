@@ -31,7 +31,7 @@ function render(searchResult) {
     else if (searchResult.length <= 10) {
         refs.countryOutput.insertAdjacentHTML('beforeend', countryList(searchResult));
     }
-    else if (searchResult.length >= 10){
+    else if (searchResult.length > 10){
         error({
             title: false,
             text: 'Too many matches found. Please enter a more spesific query!',
@@ -41,7 +41,8 @@ function render(searchResult) {
             delay: 500,
             remove: true,
         });
-        }
+    }
+    else refs.countryOutput.innerHTML = 'No matches found.';
     }    
             
             
